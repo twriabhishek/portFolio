@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import ecomm from "../assets/images/Screenshot 2024-05-05 163900.png";
+import chatapp from "../assets/images/Screenshot 2024-05-05 165256.png";
+import blog from "../assets/images/Screenshot 2024-05-05 165124.png";
+import pdf from "../assets/images/AbhishekNw.pdf"
 
 const Navbar = () => {
   return (
@@ -38,13 +42,13 @@ const Navbar = () => {
                     >
                       About
                     </a>
-                    <a
+                    {/* <a
                       class="nav-link active me-2"
                       aria-current="page"
                       href="#services"
                     >
                       Services
-                    </a>
+                    </a> */}
                     <a
                       class="nav-link active me-2"
                       aria-current="page"
@@ -84,65 +88,139 @@ const Navbar = () => {
                 About Me
               </h1>
               <p className="common-paragraph" style={{ marginBottom: "5rem" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                id, saepe quibusdam ducimus eligendi, vitae tempora quidem
-                repudiandae quia, debitis pariatur architecto quas molestias
-                doloremque sit adipisci iste? Necessitatibus fugit dolore quis
-                voluptatibus error magnam atque perferendis quidem labore
-                ducimus deserunt sed nam eum laudantium illo, pariatur tempore
-                minus porro?
+                ◦ I'm an ambitious, disciplined, and visionary individual. With
+                approximately two years of professional experience in the IT
+                industry,I have honed my skills while working on live project
+                environments,fostering continuous learning and development.
+                Specializing in building client applications, I bring forth
+                strong interpersonal and communication skills to drive project
+                success
+                <br />
+                ◦ Tech enthusiast dedicated to continuous learning and
+                innovation, with a solid foundation in Computer Science
+                fundamentals. Proficient in frontend web development
+                technologies such as HTML5, CSS, JavaScript, Bootstrap, and
+                React.js. Experienced in backend technologies like Node.js,
+                Express, and databases including relational and non-relational
+                databases.
+                <br />
+                ◦ Driven by ambition and guided by a forward-thinking mindset, I
+                excel in problem-solving and embrace challenges as oppor-
+                tunities for personal and professional growth. I maintain
+                discipline and focus to achieve success in all endeavors. I
+                thrive on exploring new technologies and accumulating fresh
+                experiences.
+                <br />
+                <br />
+                Feel free to reach out via <i class="fa-solid fa-envelope"></i>{" "}
+                : <a href="">abhishek130199@gmail.com</a>
+                <br />
+                Feel free to reach out via <i class="fa-solid fa-phone"></i> :{" "}
+                <a href="">(+91) 9506937439</a>
               </p>
             </div>
             <div className="row">
               <div className="col-12 col-lg-4 mb-5">
                 <div className="mb-4">
-                  <h3 className="sub-common-heading" style={{color:"#ff004f"}}>Skills</h3>
+                  <h3
+                    className="sub-common-heading"
+                    style={{ color: "#ff004f" }}
+                  >
+                    Skills
+                  </h3>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">UI/UX</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">Language</p>
+                  <p className="mt-0 mb-0">C++, Java(Novice), JavaScript</p>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">UI/UX</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">Tools</p>
+                  <p className="mt-0 mb-0">Git, AI Tools</p>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">UI/UX</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">Technologies</p>
+                  <p className="mt-0 mb-0">
+                    HTML, CSS, Javascript, React Js, Bootstrap, NodeJs
+                  </p>
+                </div>
+                <div className="common-paragraph">
+                  <p className="mt-4 mb-0">Databases</p>
+                  <p className="mt-0 mb-0">
+                    Oracle sql, Mysql, Mongodb, Structured Query Language
+                  </p>
+                </div>
+                <div className="common-paragraph">
+                  <p className="mt-4 mb-0">Technical Skills</p>
+                  <p className="mt-0 mb-0">Data Structure and Algorithm, Aws</p>
                 </div>
               </div>
               <div className="col-12 col-lg-4 mb-5">
                 <div className="mb-4">
-                  <h3 className="sub-common-heading" style={{color:"#ff004f"}}>Experience</h3>
+                  <h3
+                    className="sub-common-heading"
+                    style={{ color: "#ff004f" }}
+                  >
+                    Experience
+                  </h3>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">2024-2026</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">EXATO. AI | Software Engineer</p>
+                  <p className="mt-0 mb-0">
+                    June, 2023 - Present |{" "}
+                    <i class="fa-solid fa-location-dot"></i> Noida(INDIA)
+                  </p>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">2024-2026</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">
+                    SRDT PRIVATE LIMITED | Software Engineer
+                  </p>
+                  <p className="mt-0 mb-0">
+                    October, 2022 - May, 2023 |{" "}
+                    <i class="fa-solid fa-location-dot"></i> Lucknow(INDIA)
+                  </p>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">2024-2026</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">
+                    SOFTPRO INDIA PVT LTD| Software Intern
+                  </p>
+                  <p className="mt-0 mb-0">
+                    July, 2019 - August, 2019 |{" "}
+                    <i class="fa-solid fa-location-dot"></i> Lucknow(INDIA)
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-lg-4 mb-5">
                 <div>
-                  <h3 className="sub-common-heading" style={{color:"#ff004f"}}>Education</h3>
+                  <h3
+                    className="sub-common-heading"
+                    style={{ color: "#ff004f" }}
+                  >
+                    Education
+                  </h3>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">2018</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">
+                    DR. RMLAU UNIVERSITY |{" "}
+                    <i class="fa-solid fa-location-dot"></i> AYODHYA(INDIA){" "}
+                    <br /> B.Tech. in Computer Science and Engineering
+                  </p>
+                  <p className="mt-0 mb-0">Passout- August, 2022</p>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">2018</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">
+                    MRLB INTER COLLEGE |{" "}
+                    <i class="fa-solid fa-location-dot"></i> BARABANKI(IND){" "}
+                    <br /> Intermediate in Physics, Chemistry and Mathematics
+                  </p>
+                  <p className="mt-0 mb-0">Passout- June, 2017</p>
                 </div>
                 <div className="common-paragraph">
-                  <p className="mt-4 mb-0">2017</p>
-                  <p className="mt-0 mb-0">Lorem ipsum dolor sit amet.</p>
+                  <p className="mt-4 mb-0">
+                    MRLB INTER COLLEGE |{" "}
+                    <i class="fa-solid fa-location-dot"></i> BARABANKI(IND){" "}
+                    <br /> HighSchool in Mathematics
+                  </p>
+                  <p className="mt-0 mb-0">Passout- July, 2015</p>
                 </div>
               </div>
             </div>
@@ -150,7 +228,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div id="services">
+      {/* <div id="services">
         <div className="container">
           <div className="row mt-5 mb-5">
             <div className="row mb-4">
@@ -225,7 +303,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div id="Work">
         <div className="container">
@@ -237,66 +315,100 @@ const Navbar = () => {
               <div className="row">
                 <div className="col-12 col-lg-4 mb-4">
                   <div class="card">
-                    <img
-                      src="https://images.pexels.com/photos/248526/pexels-photo-248526.jpeg?auto=compress&cs=tinysrgb&w=600"
-                      class="card-img-top"
-                      alt="alternate"
-                    />
+                    <img src={blog} class="card-img-top" alt="alternate" />
                     <div class="card-body">
-                      <h5 class="card-title sub-common-heading">Card title</h5>
-                      <p class="card-text common-paragraph">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                      <h5 class="card-title sub-common-heading">
+                        Bloging Application
+                      </h5>
+                      <p
+                        class="card-text common-paragraph"
+                        style={{ overflowY: "scroll", maxHeight: "135px" }}
+                      >
+                        Tech Stack: NodeJs, Express, Bootstrap, EJS
+                        <br />
+                        Brief Intro: I have built a complete server-side
+                        rendered application using Node.js, Express, and EJS. I
+                        have implemented various functionalities such as
+                        register, login, comment, like, add blog, update blog,
+                        delete blog, etc.
                       </p>
                       <div className="button-div">
-                        <button className="button contact-button submit-button">
-                          Go
-                          <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
-                        </button>
+                        <a
+                          href="https://github.com/twriabhishek/nodeJSComplete/tree/master/22_utubeBlog"
+                          target="_blank"
+                        >
+                          <button className="button contact-button submit-button">
+                            Go
+                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-12 col-lg-4 mb-4">
                   <div class="card">
-                    <img
-                      src="https://images.pexels.com/photos/248526/pexels-photo-248526.jpeg?auto=compress&cs=tinysrgb&w=600"
-                      class="card-img-top"
-                      alt="alternate"
-                    />
+                    <img src={ecomm} class="card-img-top" alt="alternate" />
                     <div class="card-body">
-                      <h5 class="card-title sub-common-heading">Card title</h5>
-                      <p class="card-text common-paragraph">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                      <h5 class="card-title sub-common-heading">
+                        E-commerce Store
+                      </h5>
+                      <p
+                        class="card-text common-paragraph"
+                        style={{ overflowY: "scroll", maxHeight: "135px" }}
+                      >
+                        Tech Stack: React, UseContext Api, Bootstrap
+                        <br />
+                        Brief Intro: In this application, the main focus has
+                        been on manipulating the state using the Connect API.
+                        There are various functionalities such as product
+                        description, adding a product, remove product from
+                        wishlist, updating wishlist, etc.
                       </p>
                       <div className="button-div">
-                        <button className="button contact-button submit-button">
-                          Go
-                          <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
-                        </button>
+                        <a
+                          href="https://github.com/twriabhishek/Ecommerce"
+                          target="_blank"
+                        >
+                          <button className="button contact-button submit-button">
+                            Go
+                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-12 col-lg-4 mb-4">
                   <div class="card">
-                    <img
-                      src="https://images.pexels.com/photos/248526/pexels-photo-248526.jpeg?auto=compress&cs=tinysrgb&w=600"
-                      class="card-img-top"
-                      alt="alternate"
-                    />
+                    <img src={chatapp} class="card-img-top" alt="alternate" />
                     <div class="card-body">
-                      <h5 class="card-title sub-common-heading">Card title</h5>
-                      <p class="card-text common-paragraph">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                      <h5 class="card-title sub-common-heading">
+                        Chat Application
+                      </h5>
+                      <p
+                        class="card-text common-paragraph"
+                        style={{ overflowY: "scroll", maxHeight: "135px" }}
+                      >
+                        Tech Stack: NodeJs, EJS, Bootstrap, Websocket
+                        <br />
+                        Brief Intro: In this application, a user can enter a
+                        chat room by providing their username. Once inside the
+                        chat room, they can engage in conversation with all
+                        other participants present in the chat. Multiple users
+                        can join the chat room simultaneously, allowing for
+                        group discussions.
                       </p>
                       <div className="button-div">
-                        <button className="button contact-button submit-button">
-                          Go
-                          <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
-                        </button>
+                        <a
+                          href="https://github.com/twriabhishek/nodeJSComplete/blob/master/23_websocket/index.js"
+                          target="_blank"
+                        >
+                          <button className="button contact-button submit-button">
+                            Go
+                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -311,67 +423,81 @@ const Navbar = () => {
         <div className="container">
           <div className="row mt-5 mb-5">
             <div className="container">
-            <div className="row">
-
-              <div className="col-12 col-lg-4">
-                <h1 className="main-common-heading">Contact Me</h1>
-                <p className="common-paragraph mb-5">
-                  <i class="fa-solid fa-paper-plane me-4"></i>abc@gmail.com
-                </p>
-                <p className="common-paragraph mb-5">
-                  <i class="fa-solid fa-phone  me-4"></i>98765456789
-                </p>
-                <div className="contact-icons">
-                  <i class="fa-brands fa-instagram me-4 contact"></i>
-                  <i class="fa-brands fa-facebook me-4 contact"></i>
-                  <i class="fa-brands fa-twitter me-4 contact"></i>
-                  <i class="fa-brands fa-github me-4 contact"></i>
-                  <i class="fa-brands fa-linkedin contact"></i>
-                </div>
-                <div className="button-div">
-                  <button className="button contact-button">Download CV</button>
-                </div>
-              </div>
-
-              <div className="col-12 col-lg-8">
-                <form className="contact-form">
-                  <div class="mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      aria-describedby="name"
-                      placeholder="Enter Name"
-                      name="name"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      aria-describedby="email"
-                      placeholder="Enter you email"
-                      name="email"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      rows="6"
-                      placeholder="Enter your message"
-                      name="message"
-                    ></textarea>
+              <div className="row">
+                <div className="col-12 col-lg-4">
+                  <h1 className="main-common-heading">Contact Me</h1>
+                  <p className="common-paragraph mb-5">
+                    <i class="fa-solid fa-paper-plane me-4"></i>{" "}
+                    abhishek130199@gmail.com
+                  </p>
+                  <p className="common-paragraph mb-5">
+                    <i class="fa-solid fa-phone  me-4"></i>9506937439
+                  </p>
+                  <div className="contact-icons">
+                    <a href="https://www.instagram.com/im_ab.hishek_?igsh=MWYxdnc3N2Uxcmc2Ng==" target="_blank">
+                    <i class="fa-brands fa-instagram me-4 contact"></i>
+                    </a>
+                    <a href="https://www.facebook.com/abhishekpandit.pandit.524?mibextid=ZbWKwL" target="_blank">
+                    <i class="fa-brands fa-facebook me-4 contact"></i>
+                    </a>
+                    <a href="https://x.com/im_abhitiwari?t=dk01hOWVtQ-XpUBcHL2i9g&s=09" target="_blank">
+                    <i class="fa-brands fa-twitter me-4 contact"></i>
+                    </a>
+                    <a href="https://github.com/twriabhishek" target="_blank">
+                    <i class="fa-brands fa-github me-4 contact"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhishek-tiwari-7232171b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <i class="fa-brands fa-linkedin contact"></i>
+                    </a>
                   </div>
                   <div className="button-div">
-                    <button className="button contact-button submit-button">
-                      Submit
-                    </button>
+                    <a href={pdf} download="Abhishek_CV.pdf">
+                      <button className="button contact-button">
+                        Download CV
+                      </button>
+                    </a>
                   </div>
-                </form>
+                </div>
+
+                <div className="col-12 col-lg-8">
+                  <form className="contact-form">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        aria-describedby="name"
+                        placeholder="Enter Name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="email"
+                        placeholder="Enter you email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="6"
+                        placeholder="Enter your message"
+                        name="message"
+                      ></textarea>
+                    </div>
+                    <div className="button-div">
+                      <button className="button contact-button submit-button">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -384,8 +510,9 @@ const Navbar = () => {
               <a
                 data-mdb-ripple-init
                 className="btn btn-outline btn-floating m-1 rounded-circle bg-light"
-                href="#!"
+                href="https://www.facebook.com/abhishekpandit.pandit.524?mibextid=ZbWKwL"
                 role="button"
+                target="_blank"
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
@@ -393,8 +520,9 @@ const Navbar = () => {
               <a
                 data-mdb-ripple-init
                 className="btn btn-outline btn-floating m-1 rounded-circle bg-light"
-                href="#!"
+                href="https://x.com/im_abhitiwari?t=dk01hOWVtQ-XpUBcHL2i9g&s=09"
                 role="button"
+                target="_blank"
               >
                 <i class="fab fa-twitter"></i>
               </a>
@@ -404,6 +532,7 @@ const Navbar = () => {
                 class="btn btn-outline btn-floating m-1 rounded-circle bg-light"
                 href="#!"
                 role="button"
+                target="_blank"
               >
                 <i class="fab fa-google"></i>
               </a>
@@ -411,8 +540,9 @@ const Navbar = () => {
               <a
                 data-mdb-ripple-init
                 class="btn btn-outline btn-floating m-1 rounded-circle bg-light"
-                href="#!"
+                href="https://www.instagram.com/im_ab.hishek_?igsh=MWYxdnc3N2Uxcmc2Ng=="
                 role="button"
+                target="_blank"
               >
                 <i class="fab fa-instagram"></i>
               </a>
@@ -420,8 +550,9 @@ const Navbar = () => {
               <a
                 data-mdb-ripple-init
                 class="btn btn-outline btn-floating m-1 rounded-circle bg-light"
-                href="#!"
+                href="https://www.linkedin.com/in/abhishek-tiwari-7232171b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 role="button"
+                target="_blank"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -429,8 +560,9 @@ const Navbar = () => {
               <a
                 data-mdb-ripple-init
                 class="btn btn-outline btn-floating m-1 rounded-circle bg-light"
-                href="#!"
+                href="https://github.com/twriabhishek"
                 role="button"
+                target="_blank"
               >
                 <i class="fab fa-github"></i>
               </a>
