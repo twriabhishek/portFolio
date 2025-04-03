@@ -200,14 +200,14 @@ li {
 
 .contact-form input {
   height: 4rem;
-  background-color: rgb(34, 33, 33);
+  background-color: rgb(255, 254, 254);
   font-size: 2rem;
 }
 .contact-form input::placeholder {
   font-size: 2rem;
 }
 .contact-form textarea {
-  background-color: rgb(34, 33, 33);
+  background-color: rgb(255, 255, 255);
   font-size: 2rem;
 }
 .contact-form textarea::placeholder {

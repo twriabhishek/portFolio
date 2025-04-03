@@ -1,10 +1,48 @@
 import React, { useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import ecomm from "../assets/images/Screenshot 2024-05-05 163900.png";
 import chatapp from "../assets/images/Screenshot 2024-05-05 165256.png";
 import blog from "../assets/images/Screenshot 2024-05-05 165124.png";
-import pdf from "../assets/images/AbhishekNw.pdf"
+import pdf from "../assets/images/AbhishekNw.pdf";
 
 const Navbar = () => {
+  const [contactdetails, setContactDetails] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setContactDetails((prevDetails) => ({
+      ...prevDetails,
+      [name]: value,
+    }));
+  };
+
+  const handleClickNotify = (e) => {
+    e.preventDefault();
+    if (
+      !contactdetails.name ||
+      !contactdetails.email ||
+      !contactdetails.message ||
+      !contactdetails.name.trim() ||
+      !contactdetails.email.trim() ||
+      !contactdetails.message.trim()
+    ) {
+      toast.error("All fields required");
+    } else {
+      console.log(contactdetails);
+      toast.success("Submit Successfully");
+      setContactDetails({
+        ...contactdetails,
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
+  };
+
   return (
     <>
       <div id="header">
@@ -434,20 +472,32 @@ const Navbar = () => {
                     <i class="fa-solid fa-phone  me-4"></i>9506937439
                   </p>
                   <div className="contact-icons">
-                    <a href="https://www.instagram.com/im_ab.hishek_?igsh=MWYxdnc3N2Uxcmc2Ng==" target="_blank">
-                    <i class="fa-brands fa-instagram me-4 contact"></i>
+                    <a
+                      href="https://www.instagram.com/im_ab.hishek_?igsh=MWYxdnc3N2Uxcmc2Ng=="
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram me-4 contact"></i>
                     </a>
-                    <a href="https://www.facebook.com/abhishekpandit.pandit.524?mibextid=ZbWKwL" target="_blank">
-                    <i class="fa-brands fa-facebook me-4 contact"></i>
+                    <a
+                      href="https://www.facebook.com/abhishekpandit.pandit.524?mibextid=ZbWKwL"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook me-4 contact"></i>
                     </a>
-                    <a href="https://x.com/im_abhitiwari?t=dk01hOWVtQ-XpUBcHL2i9g&s=09" target="_blank">
-                    <i class="fa-brands fa-twitter me-4 contact"></i>
+                    <a
+                      href="https://x.com/im_abhitiwari?t=dk01hOWVtQ-XpUBcHL2i9g&s=09"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-twitter me-4 contact"></i>
                     </a>
                     <a href="https://github.com/twriabhishek" target="_blank">
-                    <i class="fa-brands fa-github me-4 contact"></i>
+                      <i class="fa-brands fa-github me-4 contact"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/abhishek-tiwari-7232171b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                    <i class="fa-brands fa-linkedin contact"></i>
+                    <a
+                      href="https://www.linkedin.com/in/abhishek-tiwari-7232171b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-linkedin contact"></i>
                     </a>
                   </div>
                   <div className="button-div">
@@ -468,7 +518,10 @@ const Navbar = () => {
                         id="name"
                         aria-describedby="name"
                         placeholder="Enter Name"
+                        required
                         name="name"
+                        value={contactdetails.name}
+                        onChange={handleChange}
                       />
                     </div>
                     <div class="mb-3">
@@ -478,7 +531,10 @@ const Navbar = () => {
                         id="email"
                         aria-describedby="email"
                         placeholder="Enter you email"
+                        required
                         name="email"
+                        value={contactdetails.email}
+                        onChange={handleChange}
                       />
                     </div>
                     <div class="mb-3">
@@ -487,11 +543,17 @@ const Navbar = () => {
                         id="message"
                         rows="6"
                         placeholder="Enter your message"
+                        required
                         name="message"
+                        value={contactdetails.message}
+                        onChange={handleChange}
                       ></textarea>
                     </div>
                     <div className="button-div">
-                      <button className="button contact-button submit-button">
+                      <button
+                        className="button contact-button submit-button"
+                        onClick={handleClickNotify}
+                      >
                         Submit
                       </button>
                     </div>
@@ -577,6 +639,8 @@ const Navbar = () => {
           </div>
         </footer>
       </div>
+
+      <Toaster />
     </>
   );
 };
